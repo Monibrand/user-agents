@@ -55,7 +55,6 @@ jobs:
             yarn build
       - persist_to_workspace:
           root: ~/user-agents
-          paths:
           <<: *whitelist
 
   test:
@@ -102,7 +101,6 @@ jobs:
             yarn update-data
       - persist_to_workspace:
           root: ~/user-agents
-          paths:
           <<: *whitelist
 
   publish-new-version:
@@ -188,7 +186,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - monibrand-version
 
     jobs:
       - checkout
