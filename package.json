@@ -1,6 +1,6 @@
 {
   "name": "@monibrand/user-agents",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A JavaScript library for generating random user agents. ",
   "files": [
     "dist"
